@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/otherbackground"
+    tools:context=".MemberMainActivity">
+
+    <TextView
+        android:id="@+id/welcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/welcome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTitle" />
+
+    <Button
+        android:id="@+id/joinPlanButton"
+        android:layout_width="268dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="casual"
+        android:onClick="joinPlanOnClick"
+        android:text="@string/join_plan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F1E9E9"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayUsername" />
+
+    <Button
+        android:id="@+id/leavePlanButton"
+        android:layout_width="267dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="248dp"
+        android:fontFamily="casual"
+        android:onClick="leavePlanOnClick"
+        android:text="@string/leave_plan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayUsername" />
+
+    <Button
+        android:id="@+id/createPlanButton"
+        android:layout_width="268dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:onClick="createPlanOnClick"
+        android:text="@string/create_plan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F1E9E9"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayUsername" />
+
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="133dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="80dp"
+        android:onClick="logOutOnClick"
+        android:text="@string/log_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkPlanButton" />
+
+    <Button
+        android:id="@+id/checkPlanButton"
+        android:layout_width="268dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="172dp"
+        android:fontFamily="casual"
+        android:onClick="checkPlanOnClick"
+        android:text="@string/check_plan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F1E9E9"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayUsername" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

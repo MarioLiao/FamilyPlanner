@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.familyplanner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FamilyPlanner">
+        <activity
+            android:name=".MemberCheckTimeSlotActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MemberAddTimeSlotActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MemberCheckPlanInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MemberCheckPlanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MemberJoinAnotherPlanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MemberCreatePlanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MemberSignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MemberMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
